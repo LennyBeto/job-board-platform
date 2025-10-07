@@ -1,6 +1,10 @@
 from django.apps import AppConfig
 
-
 class JobsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'jobs'
+    name = 'apps.jobs' 
+    label = 'jobs'
+
+    def ready(self):
+        # Import models to ensure they're registered
+        from . import models
