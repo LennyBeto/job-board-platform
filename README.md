@@ -246,7 +246,7 @@ Available filters:
 
 ### Admin
 
-- Create, update, and delete jobs
+- Create, update, and delete jobs 
 - Manage categories
 - View all applications
 - Access admin panel
