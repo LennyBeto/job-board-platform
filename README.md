@@ -47,7 +47,7 @@ It provides comprehensive features for managing job postings, user applications,
 ### Option 1: Local Development
 
 1. **Clone the repository**
-
+ 
 ```bash
 git clone https://github.com/LennyBeto/job-board-platform.git
 cd job-board-platform
