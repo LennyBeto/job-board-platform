@@ -40,7 +40,7 @@ It provides comprehensive features for managing job postings, user applications,
 - Python 3.11+
 - PostgreSQL 15+
 - Docker & Docker Compose (optional)
-- pip & virtualenv
+- pip & virtualenv 
 
 ## 🔧 Installation & Setup
 
