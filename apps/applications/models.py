@@ -4,7 +4,7 @@ from django.conf import settings
 from apps.jobs.models import Job
 
 class Application(models.Model):
-    STATUS_CHOICES = [
+    STATUS_CHOICES = [ 
         ('pending', 'Pending'),
         ('reviewed', 'Reviewed'),
         ('shortlisted', 'Shortlisted'),
