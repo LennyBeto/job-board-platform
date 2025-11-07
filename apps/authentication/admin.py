@@ -21,7 +21,9 @@ class UserAdmin(BaseUserAdmin):
             'fields': ('applied_at', 'updated_at'),
             'classes': ('collapse',)
         }),
-    )dsets = (
+    )
+
+    fieldsets = (
         (None, {'fields': ('email', 'password')}),
         ('Personal Info', {'fields': ('first_name', 'last_name', 'phone_number', 'resume')}),
         ('Permissions', {'fields': ('role', 'is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')}),
