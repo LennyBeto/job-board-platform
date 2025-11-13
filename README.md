@@ -3,7 +3,7 @@
 The Job Board Platform Backend is an enterprise-grade RESTful API designed to power modern job board platforms. It is a robust, scalable, and production-ready backend system for a comprehensive job board platform built with Django, PostgreSQL, and JWT authentication.
 It provides comprehensive features for managing job postings, user applications, optimized job search capabilities, comprehensive API documentation, and role-based access control with a focus on performance, security, and scalability.  
  
-## 🚀 Features 
+## Features 
 
 ### Core Functionality
 
@@ -22,7 +22,7 @@ It provides comprehensive features for managing job postings, user applications,
 - **Comprehensive Testing**: Unit and integration tests
 - **Docker Support**: Containerized deployment ready
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 | Technology            | Purpose                                    |
 | --------------------- | ------------------------------------------ |
@@ -35,14 +35,14 @@ It provides comprehensive features for managing job postings, user applications,
 | Gunicorn              | WSGI HTTP Server                           |
 | Nginx                 | Reverse proxy (production)                 |
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - Python 3.11+
 - PostgreSQL 15+
 - Docker & Docker Compose (optional)
 - pip & virtualenv 
 
-## 🔧 Installation & Setup
+##  Installation & Setup
 
 ### Option 1: Local Development
 
@@ -125,7 +125,7 @@ docker-compose up --build
 docker-compose exec web python manage.py createsuperuser
 ```
 
-## 🔑 Environment Variables
+##  Environment Variables
 
 Create a `.env` file with the following variables:
 
@@ -150,7 +150,7 @@ JWT_REFRESH_TOKEN_LIFETIME=1440  # minutes (24 hours)
 CORS_ALLOWED_ORIGINS=http://localhost:3000,http://localhost:8000
 ```
 
-## 📚 API Documentation
+##  API Documentation
 
 Access the interactive API documentation at:
 
@@ -158,7 +158,7 @@ Access the interactive API documentation at:
 - **ReDoc**: `http://localhost:8000/api/redoc/`
 - **OpenAPI Schema**: `http://localhost:8000/api/schema/`
 
-## 🔐 Authentication
+##  Authentication
 
 The API uses JWT (JSON Web Tokens) for authentication.
 
@@ -190,7 +190,7 @@ Include the access token in the Authorization header:
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGc...
 ```
 
-## 🎯 API Endpoints
+##  API Endpoints
 
 ### Authentication
 
@@ -224,7 +224,7 @@ Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGc...
 - `PUT /api/applications/{id}/` - Update application
 - `DELETE /api/applications/{id}/` - Withdraw application
 
-## 🔍 Query Parameters
+##  Query Parameters
 
 ### Job Filtering
 
@@ -242,7 +242,7 @@ Available filters:
 - `search` - Search in title and description
 - `ordering` - Sort results (e.g., `-created_at`, `salary`)
 
-## 👥 User Roles
+##  User Roles
 
 ### Admin
 
@@ -258,7 +258,7 @@ Available filters:
 - Manage own applications
 - Update own profile
 
-## 🧪 Testing
+##  Testing
 
 Run the test suite:
 
@@ -281,7 +281,7 @@ pytest
 pytest --cov=apps
 ```
 
-## 🚀 Deployment
+##  Deployment
 
 ### Heroku Deployment
 
@@ -317,7 +317,7 @@ heroku run python manage.py createsuperuser
 
 See [DEPLOYMENT.md](docs/DEPLOYMENT.md) for detailed deployment instructions.
 
-## 📊 Database Schema
+##  Database Schema
 
 The application uses a normalized PostgreSQL schema with the following main models:
 
@@ -328,14 +328,14 @@ The application uses a normalized PostgreSQL schema with the following main mode
 
 See [DATABASE_SCHEMA.md](docs/DATABASE_SCHEMA.md) for detailed schema documentation.
 
-## 🔧 Performance Optimizations
+##  Performance Optimizations
 
 - **Database Indexing**: Indexes on frequently queried fields
 - **Query Optimization**: Select_related and prefetch_related for reducing queries
 - **Pagination**: Default pagination for list endpoints
 - **Caching**: Redis caching for frequently accessed data (optional)
 
-## 📝 Git Workflow
+##  Git Workflow
 
 Follow conventional commits:
 
@@ -347,7 +347,7 @@ docs: update API documentation
 test: add job model tests
 ```
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feat/amazing-feature`)
@@ -355,7 +355,7 @@ test: add job model tests
 4. Push to branch (`git push origin feat/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
@@ -370,6 +370,6 @@ Lenny Beto - [GitHub](https://github.com/LennyBeto)
 - PostgreSQL Documentation
 - JWT Authentication best practices
 
-## 📞 Support
+##  Support
 
-For support, email support@prodevjobboard.com or open an issue on GitHub.
+For support, email lennybeto.lb@gmail.com or open an issue on GitHub.
