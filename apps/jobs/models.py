@@ -47,7 +47,7 @@ class Job(models.Model):
     
     class Meta:
         db_table = 'jobs'
-        ordering = ['-created_at']
+        ordering = ['created_at']
         indexes = [
             models.Index(fields=['location']),
             models.Index(fields=['job_type']),
